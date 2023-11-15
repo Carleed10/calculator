@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+   
+    <div class="ct">
+        <div class="all">
+    
+            <p class="p"> <span id="p"></span> <span id="q"></span> <span id="r"></span>  </p>
+        
+            <input id="input" type="text">
+        
+            <div class="head">
+                <p class="grey">MC</p>     <p class="grey">MR</p>   <p>M+</p>     <p>M-</p>     <p>MS</p>    <p class="grey">M</p>
+            </div>
+        
+          <div class="way">
+            <div class="nd">
+                <button onclick="addSym('%')">%</button>
+                <button onclick="resetAll('')">CE</button>
+                <button onclick="resetAll('')">C</button>
+                <button onclick="removeChar()">Del</button>
+            </div>
+           
+        
+            <div class="nd">
+                <button onclick="inverse()">@</button>
+            <button onclick="sqr()">&</button>
+            <button onclick="sqrRoot()">_</button>
+            <button onclick="addSym('/')">/</button>
+        
+            </div>
+        
+            <div class="first">
+                <button onclick="addnum(7)">7</button>
+                <button onclick="addnum(8)">8</button>
+                <button onclick="addnum(9)">9</button>
+                <button id="jj" onclick="addSym('*')">x</button>
+            </div>
+        
+            <div class="first">
+                
+            <button onclick="addnum(4)">4</button>
+            <button onclick="addnum(5)">5</button>
+            <button onclick="addnum(6)">6</button>
+            <button id="jj" onclick="addSym('-')">-</button>
+            
+            </div>
+        
+        
+            <div class="first">
+                
+            <button onclick="addnum(1)">1</button>
+            <button onclick="addnum(2)">2</button>
+            <button onclick="addnum(3)">3</button>
+            <button id="jj" onclick="addSym('+')">+</button>
+            </div>
+        
+            <div class="first">
+                <button onclick="addnum('-')">+/-</button>
+                <button onclick="addnum(0)">0</button>
+                <button onclick="addnum('.')">.</button>
+                <button id="kk" onclick="equal()">=</button>
+            </div>
+          </div>
+           
+            
+           </div>
+    </div>
+
+</body>
+</html>
+
+
+<script src="calculator.js"></script>
